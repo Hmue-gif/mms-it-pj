@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Libre+Franklin&family=Open+Sans:wght@600;700;800&family=Oswald:wght@400;500&family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    }
+.site-logo{
+    width: 150px;
+}
+
+.site-nav{
+    position: absolute;
+    top: 0;
+}
+
+.home{
+    background-image: url("../img/Bg-Shape.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50%;
+}
+
+body{
+    height: 500vh;
+}
+
+.about-text{
+    background-image: url("../img/bg-2.svg");
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.about{
+    background-color: #7E76F910;
+    
+}
+
+.services{
+    background-image: url("../img/bg-3.svg");
+}
+
+.service-card{
+    border-radius: 35px !important;
+    border: none !important;
+    height: 450px;
+}
+
+.pricing-card{
+    border-radius: 35px !important;
+    border: none !important;
+    width: 350px;
+}
+
+.pricing{
+    background-color: #7E76F910;
+}
+
+.footer{
+    background-image: url("../img/footer-1.svg"),url("../img/footer-2.svg");
+    width: 100%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 170px;
+}
+
+@media screen and (max-width : 576px) {
+    .footer {
+        background-size: cover;
+        background-position: center;
+    }
+}
