@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="../img/logo-small.png" type="image/x-icon/">
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
     <!-- bootstrap link -->
@@ -16,12 +17,19 @@
     <!-- fontawesome link -->
     <link rel="stylesheet" href="../vendor/font/fontawesome/css/all.css">
     <script src="../vendor/font/fontawesome/js/all.js"></script>
+    <!-- wow link -->
+    <link rel="stylesheet" href="../vendor/wow/css/libs/animate.css">
+    <!-- animate css link -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
     
 </head>
 <body>
 
     <!-- header section -->
-    <header class="container-fluid site-nav">
+    <header class="container-fluid site-nav animate__animated animate__slideInDown">
         <div class="row">
             <div class="container">
                 <div class="row">
@@ -71,15 +79,15 @@
                 <div class="container">
                     <div class="row min-vh-100 align-items-center flex-column-reverse flex-md-row">
                         <div class="col-12 col-md-6">
-                           <div class=" my-2 my-md-0 mx-0 mx-md-4">
+                           <div class=" my-2 my-md-0 mx-0 mx-md-4 wow animate__slideInLeft delay1">
                                 <h3 class=" text-uppercase">social media</h3>
                                 <h1 class=" text-uppercase">for business!</h1>
-                                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Soluta, architecto culpa impedit quasi voluptas perspiciatis eveniet non quos.</p>
-                                <a href="" class="btn btn-primary text-uppercase">register now</a>
+                                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Soluta, architecto culpa impedit quasi voluptas perspiciatis.</p>
+                                <a href="" class="btn btn-primary text-uppercase rbtn"><span class="rtxt">register now</span></a>
                            </div>
                         </div>
                         <div class="col-12 col-md-6">
-                             <div class="my-3 mx-3 mx-md-0 my-md-0">
+                             <div class="my-3 mx-3 mx-md-0 my-md-0 wow animate__slideInRight delay2">
                                  <img src="../img/content-1.svg" class="w-100" alt="">
                              </div>
                         </div>
@@ -87,19 +95,45 @@
                 </div>
             </div>
         </div>
+
+        <div class="icon-v wow animate__zoomIn delay2">
+            <a href="" class="my-2">
+               <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="" class="my-2">
+                  <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="" class="my-2">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="" class="my-2">
+              <i class="fas fa-users"></i>
+            </a>
+
+            <a href="" class="my-2">
+              <i class="fas fa-grip-lines-vertical"></i>
+            </a>
+        </div>
+
+        <a href="#about" class="scroll-to-next shadow wow animate__bounce delay1" style="animation-iteration-count: infinite;">
+            <img src="../img/mouse.svg" class="text-primary" style="width: 30px; height: 30px;" ></img>
+        </a> 
     </section>
     <!-- end home section -->
 
     <!-- about section -->
-    <section class="container-fluid about my-2 my-md-0">
+    <section id="about" class="container-fluid about my-2 my-md-0">
         <div class="row align-items-center min-vh-100">
-           <div class="col-12 col-md-6 py-5">
+           <div class="col-12 col-md-6 py-5 wow animate__slideInLeft delay1">
               <div class="ms-3 ms-md-0">
                   <img src="../img/content-2.svg" class="w-75 content-2" alt="">
               </div>
            </div>
 
-           <div class="col-12 col-md-6 about-text py-2">
+           <div class="col-12 col-md-6 about-text py-2 wow animate__slideInRight delay2">
             <div class="w-75 content-2-text">
                 <p class="text-secondary">Biography</p>
                 <h4 class="text-uppercase">who we are ?</h4>
@@ -118,13 +152,14 @@
           <div class="row min-vh-100">
                 <div class="container">
                     <div class="row pt-5">
-                          <div class="col-12">
+                          <div class="col-12 wow animate__lightSpeedInLeft delay1">
                             <div class="my-5 text-center">
                                 <p class="text-secondary">Our Services</p>
                                 <h4 class="text-uppercase">what we offer </h4>
                             </div>
                           </div>
-                          <div class="col-12 my-3 col-md-4">
+
+                          <div class="col-12 my-3 col-md-4 wow animate__lightSpeedInLeft delay1">
                               <div class="card shadow service-card">
                                   <div class="card-body">
                                       <div class="text-center">
@@ -140,7 +175,7 @@
                               </div>
                           </div>
                           
-                          <div class="col-12 my-3 col-md-4">
+                          <div class="col-12 my-3 col-md-4 wow animate__lightSpeedInLeft delay2">
                             <div class="card shadow service-card">
                                 <div class="card-body">
                                     <div class="text-center">
@@ -156,8 +191,8 @@
                             </div>
                           </div>
 
-                          <div class="col-12 my-3 col-md-4">
-                          <div class="card shadow service-card">
+                          <div class="col-12 my-3 col-md-4 wow animate__lightSpeedInLeft delay3">
+                            <div class="card shadow service-card">
                               <div class="card-body">
                                   <div class="text-center">
                                       <img src="../img/icon-3.svg" class="my-3" alt="">
@@ -169,10 +204,10 @@
                                       <a href="" class="btn btn-primary">see more</a>
                                   </div>
                               </div>
-                          </div>
+                            </div>
                           </div>
 
-                          <div class="col-12 my-3 col-md-4">
+                          <div class="col-12 my-3 col-md-4 wow animate__lightSpeedInRight delay3">
                             <div class="card shadow service-card">
                                 <div class="card-body">
                                     <div class="text-center">
@@ -185,10 +220,10 @@
                                         <a href="" class="btn btn-primary">see more</a>
                                     </div>
                                 </div>
-                          </div>
+                            </div>
                           </div>
 
-                          <div class="col-12 my-3 col-md-4">
+                          <div class="col-12 my-3 col-md-4 wow animate__lightSpeedInRight delay2">
                               <div class="card shadow service-card">
                                   <div class="card-body">
                                       <div class="text-center">
@@ -204,7 +239,7 @@
                               </div>
                           </div>
                           
-                          <div class="col-12 my-3 col-md-4">
+                          <div class="col-12 my-3 col-md-4 wow animate__lightSpeedInRight delay1">
                             <div class="card shadow service-card">
                                 <div class="card-body">
                                     <div class="text-center">
@@ -217,7 +252,7 @@
                                         <a href="" class="btn btn-primary">see more</a>
                                     </div>
                                 </div>
-                          </div>
+                            </div>
                           </div>
                     </div>
                 </div>
@@ -230,7 +265,7 @@
         <div class="row py-5">
             <section class="container">
                  <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 wow animate__lightSpeedInRight delay2">
                       <div class="my-2 text-center">
                           <p class="text-secondary">Pricing</p>
                           <h4 class="text-uppercase">our pricing</h4>
@@ -239,7 +274,7 @@
                  </div>
                                       
                   <div class="row pricing-slide ms-3 ms-md-5 ms-lg-5 ms-xl-5">          
-                      <div class="col-12 my-5 col-md-4">
+                      <div class="col-12 my-5 col-md-4 wow animate__rollIn delay1">
                         <div class="card shadow pricing-card">
                             <div class="card-body text-center">
                                 <h4 class="fw-bolder my-3">Gold Packages</h4>
@@ -250,7 +285,7 @@
                         </div>
                       </div>
 
-                      <div class="col-12 my-5 col-md-4">
+                      <div class="col-12 my-5 col-md-4 wow animate__rollIn delay1">
                         <div class="card shadow pricing-card">
                             <div class="card-body text-center">
                                 <h4 class="fw-bolder my-3">Premium Packages</h4>
@@ -261,7 +296,7 @@
                         </div>
                       </div>
 
-                      <div class="col-12 my-5 col-md-4">
+                      <div class="col-12 my-5 col-md-4 wow animate__rollIn delay1">
                         <div class="card shadow pricing-card">
                             <div class="card-body text-center">
                                 <h4 class="fw-bolder my-3">Diamond Packages</h4>
@@ -272,7 +307,7 @@
                         </div>
                       </div>
 
-                      <div class="col-12 my-5 col-md-4">
+                      <div class="col-12 my-5 col-md-4 wow animate__rollIn delay1">
                         <div class="card shadow pricing-card">
                             <div class="card-body text-center">
                                 <h4 class="fw-bolder my-3">Free Packages</h4>
@@ -283,7 +318,7 @@
                         </div>
                       </div>
 
-                      <div class="col-12 my-5 col-md-4">
+                      <div class="col-12 my-5 col-md-4 wow animate__rollIn delay1">
                         <div class="card shadow pricing-card">
                             <div class="card-body text-center">
                                 <h4 class="fw-bolder my-3">Normal Packages</h4>
@@ -294,7 +329,7 @@
                         </div>
                       </div>
 
-                      <div class="col-12 my-5 col-md-4">
+                      <div class="col-12 my-5 col-md-4 wow animate__rollIn delay1">
                         <div class="card shadow pricing-card">
                             <div class="card-body text-center">
                                 <h4 class="fw-bolder my-3">Monthly Packages</h4>
@@ -305,7 +340,7 @@
                         </div>
                       </div>
 
-                      <div class="col-12 my-5 col-md-4">
+                      <div class="col-12 my-5 col-md-4 wow animate__rollIn delay1">
                         <div class="card shadow pricing-card">
                             <div class="card-body text-center">
                                 <h4 class="fw-bolder my-3">Yearly Packages</h4>
@@ -316,7 +351,7 @@
                         </div>
                       </div>
 
-                      <div class="col-12 my-5 col-md-4">
+                      <div class="col-12 my-5 col-md-4 wow animate__rollIn delay1">
                         <div class="card shadow pricing-card">
                             <div class="card-body text-center">
                                 <h4 class="fw-bolder my-3">Normal Customer Packages</h4>
@@ -327,7 +362,7 @@
                         </div>
                       </div>
 
-                      <div class="col-12 my-5 col-md-4">
+                      <div class="col-12 my-5 col-md-4 wow animate__rollIn delay1">
                         <div class="card shadow pricing-card">
                             <div class="card-body text-center">
                                 <h4 class="fw-bolder my-3">Member Customer Packages</h4>
@@ -346,7 +381,7 @@
     <!-- contact section -->
     <section class="container-fluid contact">
         <div class="row my-5">
-          <div class="col-12">
+          <div class="col-12 wow animate__lightSpeedInLeft delay3">
             <div class="my-2 text-center">
               <p class="text-secondary">Contact Us</p>
               <h4 class="text-uppercase">Get a touch with us</h4>
@@ -354,7 +389,7 @@
           </div>
             <div class="container">
                 <div class="row my-3">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 wow animate__flipInX delay3">
                         <form action="">
                             <div class="form-group  my-3">
                                 <input type="text" class="form-control" placeholder="Name">
@@ -373,7 +408,7 @@
                           </div>
                         </form>
                     </div>
-                    <div class="col-12 col-md-6 my-3">
+                    <div class="col-12 col-md-6 my-3 wow animate__flipInX delay3">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.225165039584!2d96.16559701479129!3d16.81518222348101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1edbb8a89416d%3A0x64420f52367032b9!2sMMS%20IT!5e0!3m2!1sen!2ssg!4v1635867608323!5m2!1sen!2ssg" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
@@ -384,7 +419,7 @@
           <footer class="col-12 footer">
               <div class="container">
                 <div class="row">
-                  <div class="col-12 col-md-3 mb-5">
+                  <div class="col-12 col-md-3 mb-5 wow animate__jackInTheBox delay2">
                       <div class="text-center">
                           <h4 class="text-uppercase text-white my-3 fw-bold">Marketing</h4>
                           <p class="text-uppercase mb-3 text-white my-2">stay in touch</p>
@@ -397,7 +432,7 @@
                       </div>
                   </div>
 
-                  <div class="col-12 col-md-3 mb-5">
+                  <div class="col-12 col-md-3 mb-5 wow animate__jackInTheBox delay2">
                       <div class="lh-lg">
                           <h4 class="text-uppercase text-white my-3 fw-bold">quick links</h4>
                           <div class="">
@@ -412,7 +447,7 @@
                       </div>
                   </div>
 
-                  <div class="col-12 col-md-3 mb-5">
+                  <div class="col-12 col-md-3 mb-5 wow animate__jackInTheBox delay2">
 
                         <div class="text-white">
                           <h4 class="text-uppercase text-white my-3 fw-bold">hours</h4>
@@ -448,7 +483,7 @@
                         </div>
                   </div>
 
-                  <div class="col-12 col-md-3 mb-5">
+                  <div class="col-12 col-md-3 mb-5 wow animate__jackInTheBox delay2">
                     <h4 class="text-uppercase text-white my-3 fw-bolder">Contact</h4>
                     <div class="text-lighter">
                       <div class="my-3">
@@ -481,11 +516,12 @@
     <script src="../vendor/js/jquery.js"></script>
     <script src="../vendor/slick/slick.min.js"></script>
 
-    <script>
+    <!-- wow link -->
+    <script src="../vendor/wow/dist/wow.min.js"></script>
 
-      
+    <script>
+        new WOW().init();
         
-                
         $('.pricing-slide').slick({    
         infinite: true,
         slidesToShow: 3,
